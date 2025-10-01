@@ -50,7 +50,7 @@ echo $?
 ```bash
 echo "user@example.com" | ./your_program.sh -E '\w+@\w+\.\w+'
 echo $?
-```
+``` 
 
 # Match lines starting with specific text
 ```bash
