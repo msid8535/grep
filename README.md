@@ -38,7 +38,7 @@ The program reads input from stdin and exits with:
 - `1` if the pattern doesn't match
 - `2` if arguments are invalid
 
-# Examples
+## Examples
 
 ### Match lines containing digits
 ```bash
