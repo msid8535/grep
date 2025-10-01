@@ -40,24 +40,32 @@ The program reads input from stdin and exits with:
 
 ### Examples
 
-```bash
 # Match lines containing digits
+```bash
 echo "abc123def" | ./your_program.sh -E '\d+'
 echo $?
+```
 
 # Match email-like patterns
+```bash
 echo "user@example.com" | ./your_program.sh -E '\w+@\w+\.\w+'
 echo $?
+```
 
 # Match lines starting with specific text
+```bash
 echo "Hello World" | ./your_program.sh -E '^Hello'
 echo $?
+```
 
 # Match alternation
+```bash
 echo "cat" | ./your_program.sh -E '(cat|dog|bird)'
 echo $?
+```
 
 # Complex pattern with multiple features
+```bash
 echo "test-123" | ./your_program.sh -E '^[a-z]+-\d+$'
 echo $?
 ```
